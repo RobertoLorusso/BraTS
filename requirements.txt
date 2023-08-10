@@ -1,10 +1,5 @@
-# local package
--e .
-
 # external requirements
-click
-Sphinx
-coverage
-awscli
-flake8
+nibabel 
+numpy
+matplotlib
 python-dotenv>=0.5.1
