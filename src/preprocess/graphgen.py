@@ -237,7 +237,7 @@ Similarly, one the nodes have been classified, the predictions can be reverted t
 to its constituent voxels. E.g. if supervoxel 0 is predicted to be active tumor (tumor label 3) 
 then label 3 will be projected onto all the voxels which are assigned the number 0.
 '''
-def img2graph(voxel_intensities,voxel_labels,sv_partitioning = None,approx_num_nodes=5000,boxiness=0.5,k=10):
+def img2graph(voxel_intensities,voxel_labels,sv_partitioning = None,approx_num_nodes=15000,boxiness=0.5,k=0):
 
     labels_provided = True if voxel_labels is not None else False
     multi_channel = True if len(voxel_intensities.shape)==4 else False
